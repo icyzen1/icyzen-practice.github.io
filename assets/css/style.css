@@ -1,12 +1,57 @@
+@import url("_variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-font-family: Arial, sans-serif;
+
+
+.container-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-img {
-max-width: 100%;
-display: block;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1C1C;
+    border: 1px solid #262626;
+    border-radius: 100px;
+    margin: 40px 16px 0 16px;
+    width: 100%;
+    max-width: 358px;
+    height: 68px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 21px 24px;
+}
+
+.logo {
+    width: 26px;
+    height: 26px;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 40px;
+    background-color: #CAFF33;
+    border-radius: 82px;
+    margin: 6px 14px;
 }
