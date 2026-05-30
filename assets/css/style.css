@@ -525,8 +525,10 @@ body {
     max-width: 358px;
     min-height: 370px;
     background-color: #1C1C1C;
+    border-radius: 20px;
     margin-top: 60px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .use-case-list::before {
@@ -655,8 +657,10 @@ body {
     max-width: 358px;
     min-height: 370px;
     background-color: #1C1C1C;
+    border-radius: 20px;
     margin-top: 40px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .use-case-list-extend::before {
@@ -756,4 +760,71 @@ body {
     font-size: 14px;
     font-weight: 300;
     color: #B3B3B3;
+    margin-top: 20px;
+}
+
+.faq-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-title {
+    margin-top: 80px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.faq-describe {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #B3B3B3;
+    text-align: center;
+}
+
+.faq-list {
+    margin-top: 30px;
+}
+
+.faq-card {
+    margin-top: 20px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.faq-card:last-child {
+    mask-image: linear-gradient(to top, transparent 0%, black 100%);
+}
+
+.faq-card-header {
+    border-bottom: 1px solid #262626;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq-card-describe {
+    font-size: 14px;
+    font-weight: 300;
+    color: #B3B3B3;
+}
+
+.faq-load {
+    border: 1px solid #262626;
+    border-radius: 100px;
+    background-color: #1C1C1C;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
