@@ -22,7 +22,6 @@ body {
 .background-wrap {
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 .background-img {
@@ -956,10 +955,18 @@ body {
     align-items: center;
 }
 
+.testimonials-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonials-title {
     margin-top: 80px;
     font-size: 28px;
     font-weight: 500;
+    text-align: center;
 }
 
 .testimonials-description {
@@ -1019,6 +1026,17 @@ body {
     margin-top: 40px;
 }
 
+.reviews-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opacity4,
+.opacity5 {
+    display: none;
+}
+
 .review-header {
     display: flex;
     align-items: center;
@@ -1076,7 +1094,7 @@ body {
     background-color: #1C1C1C;
     background: linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%), url(../images/background-cta-card.png), #1C1C1C;
     margin-top: 80px;
-    padding: 20px;
+    padding: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1098,14 +1116,21 @@ body {
     pointer-events: none;
 }
 
+.cta-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cta-title {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
 
 .cta-description {
+    margin: 14px 0 24px 0;
     font-size: 0.875rem;
     font-weight: 300;
     color: #B3B3B3;
@@ -1121,15 +1146,19 @@ body {
 footer {
     margin-top: 80px;
     background-color: #1C1C1C;
-    padding: 0 16px;
-    height: 503px;
+    padding: 50px 16px 0 30px;
+    min-height: 503px;
+}
+
+.footer-container {
+    width: 100%;
 }
 
 .footer-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    gap: 5px;
 }
 
 .footer-logo-icon {
@@ -1243,7 +1272,7 @@ footer {
     }
 
     .background-img {
-        left: -120px;
+        left: 0;
         opacity: 1;
     }
 
@@ -1602,6 +1631,10 @@ footer {
         align-items: center;
     }
 
+    .case-card:first-child {
+        margin-right: 0;
+    }
+
     .case-card-title {
         margin-top: 14px;
         font-size: 1rem;
@@ -1805,5 +1838,184 @@ footer {
 
     .faq-card-description {
         font-size: 1rem;
+    }
+
+    .testimonials-section {
+        position: relative;
+    }
+
+    .testimonials-title-section {
+        width: 100%;
+        max-width: 813px;
+    }
+
+    .testimonials-title {
+        font-size: 2.375rem;
+        margin-top: 130px;
+        height: auto;
+        text-align: left;
+    }
+
+    .testimonials-description {
+        text-align: left;
+    }
+
+    .testimonials-page {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .reviews-container {
+        flex-direction: row;
+        border: none;
+        margin-top: 80px;
+        height: auto;
+    }
+
+    .reviews-card {
+        flex: 1;
+        margin-right: 25px;
+    }
+
+    .opacity4,
+    .opacity5 {
+        display: block;
+    }
+
+    .review-header::before,
+    .review-header::after {
+        content: "";
+        flex: 1;
+        height: 2px;
+        background: linear-gradient(rgba(38, 38, 38, 0) 0%, #262626 50%, rgba(38, 38, 38, 0) 100%);
+    }
+
+    .opacity4 {
+        margin-left: 50px;
+        mask-image: linear-gradient(to left, #262626 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .opacity5 {
+        margin-right: 50px;
+        mask-image: linear-gradient(to right, #262626 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+
+    .swipe-card {
+        position: absolute;
+    }
+
+    .swipe-left {
+        top: 430px;
+        left: 0;
+    }
+
+    .swipe-right {
+        top: 430px;
+        right: 0;
+    }
+
+    .cta-card {
+        width: 100%;
+        max-width: 1280px;
+        min-height: 223px;
+        padding: 60px;
+        gap: 0;
+        align-items: start;
+    }
+
+    .cta-page {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta-title-section {
+        width: 100%;
+        max-width: 874px;
+    }
+
+    .cta-title {
+        font-size: 1.875rem;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .cta-description {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .cta-btn {
+        margin: 27px 0 27px 150px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: none;
+        padding: 60px 80px 30px;
+        min-height: 440px;
+    }
+
+    .footer-container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .footer-logo-container {
+        margin: 0;
+    }
+
+    .footer-list {
+        padding-bottom: 40px;
+        margin: 30px 0 40px 0;
+    }
+
+    .footer-list ul {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 195px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-data {
+        font-size: 1rem;
+        margin-left: 5px;
+        white-space: nowrap;
+    }
+
+    .social-networks-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 100px;
+        min-height: 68px;
+        padding: 12px 24px 12px 12px;
+    }
+
+    .social-networks {
+        margin: 0;
+    }
+
+    .privacy-policy {
+        margin: 0;
     }
 }
