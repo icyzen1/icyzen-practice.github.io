@@ -1376,6 +1376,7 @@ footer {
     background-color: #CAFF33;
 }
 
+
 .form-btn-login {
     color: #fff;
     border: 1px solid #333333;
@@ -1477,6 +1478,14 @@ footer {
     border: 1px solid #333333;
     background-color: #262626;
     margin-bottom: 24px;
+}
+
+.form-btn-signup,
+.form-btn-login,
+.login-form-btn-login,
+.login-form-btn-signup,
+.close-btn-form {
+    cursor: pointer;
 }
 
 @media (min-width: 480px) {
