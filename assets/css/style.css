@@ -90,16 +90,14 @@ body {
 .mobile-menu {
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
     background-color: var(--bg-div-color);
     border-radius: 20px;
     z-index: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
     padding: 20px;
     display: none;
 }
@@ -110,32 +108,38 @@ body {
 
 .mobile-menu ul {
     list-style: none;
+    margin-top: 150px;
+}
+
+.mobile-menu li {
+    margin-top: 20px;
 }
 
 .mobile-menu a {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 400;
     text-decoration: none;
 }
 
 .mobile-sign-up {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #fff;
     background-color: var(--bg-div-color);
     border: none;
-    margin: 5px 0 5px 5px;
+    margin: 20px 15px 5px 5px;
 }
 
 .mobile-login {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #000;
     background-color: var(--yellow-color);
     border: none;
     border-radius: 82px;
-    padding: 8px 15px;
+    padding: 8px 20px;
+    margin-top: 20px;
 }
 
 .main-section {
@@ -1491,6 +1495,11 @@ footer {
 @media (min-width: 480px) {
     .navbar {
         max-width: 500px;
+    }
+
+    .mobile-menu {
+        right: 0%;
+        width: 100vw;
     }
 
     .features-buttons {

@@ -10,6 +10,7 @@ const openBtnSignupDesktop = document.getElementById("openBtnSignupDesktop")
 const openBtnLoginDesktop = document.getElementById("openBtnLoginDesktop");
 const openModalLoginFromSignUp = document.getElementById("openModalLoginFromSignUp")
 const openModalSignUpFromLogin = document.getElementById("openModalSignUpFromLogin");
+
 const options = {
     root: null,
     threshold: 0.05
