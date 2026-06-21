@@ -1,8 +1,5 @@
 :root {
-    --text-color: #fff;
-    --bg-color: #0A0A0F;
-    --font-body: "Inter", sans-serif;
-    --db-color: #ffffff7a;
-    --accent: #7C3AED;
-    --accent2: #6366F1;
+    --bg-main-color: #1A1A1A;
+    --bg-div-color: #1C1C1C;
+    --yellow-color: #CAFF33;
 }
