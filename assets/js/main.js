@@ -66,3 +66,15 @@ openBtnSignupDesktop.addEventListener('click', function () {
 openBtnLoginDesktop.addEventListener('click', function () {
     modalWindowLogin.classList.add('active');
 })
+
+modalWindowLogin.addEventListener("click", (event) => {
+    if (event.target === modalWindowLogin) {
+        modalWindowLogin.classList.remove('active');
+    }
+});
+
+modalWindowSignUp.addEventListener("click", (event) => {
+    if (event.target === modalWindowSignUp) {
+        modalWindowSignUp.classList.remove('active');
+    }
+});
